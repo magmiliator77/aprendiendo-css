@@ -1,0 +1,35 @@
+body{
+    background-color: #ccc;
+    /*
+    background-image: url(pattern/patron1/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: left;
+    */
+    color: black;
+    /*
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    */
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(21, 98, 129);
+    color: white;
+    font-family: "sans-serif";
+    /*text-align: right;*/
+    text-align: center;
+   
+    text-transform: uppercase;
+    text-decoration: underline;
+    vertical-align: top;
+}
+
+h2{
+    color: red;
+    background: white;
+    border: 5px solid red;
+}

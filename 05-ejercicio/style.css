@@ -1,0 +1,167 @@
+/*
+Ejercicio completo con HTML y CSS
+1. Crear un documento HTML y vincularlo con un CsS -->
+2. Crear una estructura HTML que cuente con un CONTENEDOR GENERAL
+     CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL,
+   ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL, Y FOOTER.
+3. Todo el contenido debe estar dentro del contenedor general
+  y su ancho será de 1200px y estar centrado
+4. Header debe ocupar el 100% del ancho y tener un texto grande
+centrado.
+5. Menu debe tener Los elementos uno al Lado del otro
+6. EL contenido principal debe tener un ancho del 70%
+7. EL contenido dentro del contenedor principal debe ser
+una cuadricula con 4 Lineas de 2 cajas.
+8. La barra Lateral debe tener un ancho del 30%
+9. EL footer debe tener un ancho del 100% del div que Lo contiene
+y estar abajo del todo.
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
+    width: 1200px;
+    margin: 0px auto;
+     -top: 20px;
+    border: 1px solid black;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background: rgba(38, 38, 189, 0.678);
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#menu ul li{
+    display: block;
+    float: left;
+    
+    border-right: 1px solid #fff;
+}
+
+#menu{
+    background: #eee;
+}
+
+#menu ul li a{
+    color: #444;
+    padding: 15px;
+    display: block;
+}
+
+#menu ul li:hover{
+    background: rgba(11, 11, 216, 0.678);
+    cursor: pointer;
+}
+
+#menu ul li:hover a{
+    color: white;
+}
+
+#contenido{
+    width: 69%;
+    float: left;
+}
+
+#lateral{
+    width: 30%;
+    border: 1px solid black;
+    float: left;
+    min-height: 500px;
+    max-height: 650px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#contenido .caja{
+    position: relative;
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    border: 1px solid gray;
+    color: white;
+    text-align: center;
+    line-height: 230px;
+    padding: 10px;
+    float: left;
+    margin: 20px;
+    margin-left: 30px;
+    color: #444;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px gray;
+    border-radius: 50px;
+}
+
+#contenido > h1 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    text-shadow: 1px 1px 2px gray;
+}
+
+#footer{
+    width: 100%;
+    border: 1px solid black;
+    background: #eee;
+    color: #444;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.sombra-interior{
+    box-shadow: 0px 0px 15px gray inset !important;
+
+
+}
+
+.libre{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    border: 1px solid black;
+    background: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+
+}
+
+.libre1{
+    z-index: 2;
+}
+
+.libre2{
+    background-color: green;
+    top: 280px;
+    left: 50%;
+    z-index: 1;
+}
+
+.fija{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    border: 1px solid black;
+    background: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+
+}
